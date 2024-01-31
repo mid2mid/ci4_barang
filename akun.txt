@@ -1,0 +1,15 @@
+============
+admin 
+============
+username : admin
+password : initial
+
+
+============
+user
+============
+username : user
+passwrod : initial
+
+setiap resest password : initial
+

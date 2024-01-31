@@ -1,0 +1,616 @@
+ERROR - 2024-01-28 10:30:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'ci4_penjualan', 3306, '', 0)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#11 {main}
+CRITICAL - 2024-01-28 10:30:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+ERROR - 2024-01-28 10:30:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'ci4_tekkindo', 3306, '', 0)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#11 {main}
+CRITICAL - 2024-01-28 10:30:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Users\DataController.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:06:44 --> Invalid file: "guru/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('guru/login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('guru/login', [], true)
+ 3 APPPATH\Controllers\Users\LoginController.php(16): view('guru/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:08:00 --> Invalid file: "user/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/login', [], true)
+ 3 APPPATH\Controllers\Users\LoginController.php(15): view('user/login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:08:10 --> The route for "guru.login.index" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 487.
+ 1 SYSTEMPATH\Helpers\url_helper.php(487): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('guru.login.index')
+ 2 APPPATH\Views\users\login.php(34): url_to('guru.login.index')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\login.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/login', [], true)
+ 6 APPPATH\Controllers\Users\LoginController.php(15): view('users/login', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\LoginController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:11:48 --> Call to a member function where() on null
+in APPPATH\Controllers\Users\LoginController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\LoginController->post()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-28 11:17:49 --> Allowed fields must be specified for model: "App\Models\UserModel"
+in SYSTEMPATH\BaseModel.php on line 1257.
+ 1 SYSTEMPATH\BaseModel.php(1257): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\UserModel')
+ 2 SYSTEMPATH\BaseModel.php(925): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 4 SYSTEMPATH\BaseModel.php(696): CodeIgniter\Model->update('1', [...])
+ 5 APPPATH\Controllers\Users\LoginController.php(45): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\LoginController->post()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+WARNING - 2024-01-28 11:23:57 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Users\HomeController.php on line 16.
+ 1 APPPATH\Controllers\Users\HomeController.php(16): explode('_', null, 2)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-28 11:23:57 --> Typed property App\Controllers\Users\HomeController::$usm must not be accessed before initialization
+in APPPATH\Controllers\Users\HomeController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+WARNING - 2024-01-28 11:24:24 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Users\HomeController.php on line 16.
+ 1 APPPATH\Controllers\Users\HomeController.php(16): explode('_', null, 2)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-28 11:24:24 --> Typed property App\Controllers\Users\HomeController::$usm must not be accessed before initialization
+in APPPATH\Controllers\Users\HomeController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+WARNING - 2024-01-28 11:25:04 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Users\HomeController.php on line 17.
+ 1 APPPATH\Controllers\Users\HomeController.php(17): explode('_', null, 2)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:25:04 --> Undefined array key "nama"
+in APPPATH\Views\users\components\master.php on line 67.
+ 1 APPPATH\Views\users\components\master.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('users/components/master', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/home', [], true)
+ 6 APPPATH\Controllers\Users\HomeController.php(28): view('users/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\HomeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+WARNING - 2024-01-28 11:25:37 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Controllers\Users\HomeController.php on line 17.
+ 1 APPPATH\Controllers\Users\HomeController.php(17): explode('_', null, 2)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Users\HomeController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 11:26:28 --> Undefined variable $akun
+in APPPATH\Views\users\components\master.php on line 67.
+ 1 APPPATH\Views\users\components\master.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $akun', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('users/components/master', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+ 6 APPPATH\Controllers\Users\DataController.php(24): view('users/data_customer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 11:46:23 --> mysqli_sql_exception: Unknown column 'kode' in 'where clause' in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(41): CodeIgniter\BaseModel->first()
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customerPost()
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#12 {main}
+CRITICAL - 2024-01-28 11:46:23 --> Unknown column 'kode' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `kode` = :kode:
+AND `user`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Users\DataController.php(41): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customerPost()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 11:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 11:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 12:14:00 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\DataController.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\DataController->customerPut()
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+#11 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#14 {main}
+CRITICAL - 2024-01-28 12:14:00 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customer` (`id`, `nama`, `alamat`, `kode`, `created_at`, `updated_at`) VALUES (:id:, :nama:, :alamat:, :kode:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\DataController.php(71): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customerPut()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 12:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 12:51:37 --> The route for "user.data.customer" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 487.
+ 1 SYSTEMPATH\Helpers\url_helper.php(487): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('user.data.customer')
+ 2 APPPATH\Views\users\components\navbar.php(36): url_to('user.data.customer')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('users/components/navbar', null, true)
+ 6 APPPATH\Views\users\components\master.php(43): CodeIgniter\View\View->include('users/components/navbar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('users/components/master', [], true)
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+11 APPPATH\Controllers\Users\CustomerController.php(36): view('users/data_customer', [...])
+12 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\CustomerController->index()
+13 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\CustomerController))
+14 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 12:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 12:52:24 --> Invalid file: "users/customer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/customer.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/customer', [], true)
+ 3 APPPATH\Controllers\Users\CustomerController.php(36): view('users/customer', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\CustomerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 12:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 12:53:16 --> The route for "user.data.customer" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 487.
+ 1 SYSTEMPATH\Helpers\url_helper.php(487): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('user.data.customer')
+ 2 APPPATH\Views\users\components\navbar.php(36): url_to('user.data.customer')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('users/components/navbar', null, true)
+ 6 APPPATH\Views\users\components\master.php(43): CodeIgniter\View\View->include('users/components/navbar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('users/components/master', [], true)
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/customer', [], true)
+11 APPPATH\Controllers\Users\CustomerController.php(36): view('users/customer', [...])
+12 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\CustomerController->index()
+13 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\CustomerController))
+14 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 12:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 12:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 13:47:11 --> The route for "user.inventory.index" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 487.
+ 1 SYSTEMPATH\Helpers\url_helper.php(487): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('user.inventory.index')
+ 2 APPPATH\Views\users\components\navbar.php(36): url_to('user.inventory.index')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('users/components/navbar', null, true)
+ 6 APPPATH\Views\users\components\master.php(43): CodeIgniter\View\View->include('users/components/navbar')
+ 7 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\components\\master.php')
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('users/components/master', [], true)
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/home', [], true)
+11 APPPATH\Controllers\Users\HomeController.php(29): view('users/home', [...])
+12 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\HomeController->index()
+13 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\HomeController))
+14 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 13:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 13:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 13:57:30 --> Undefined array key "deksripsi"
+in APPPATH\Views\users\inventory_barang.php on line 41.
+ 1 APPPATH\Views\users\inventory_barang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deksripsi"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/inventory_barang', [], true)
+ 5 APPPATH\Controllers\Users\InventoryBarangController.php(37): view('users/inventory_barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 13:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 13:58:17 --> Undefined array key "id_customer"
+in APPPATH\Views\users\inventory_barang.php on line 59.
+ 1 APPPATH\Views\users\inventory_barang.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_customer"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/inventory_barang', [], true)
+ 5 APPPATH\Controllers\Users\InventoryBarangController.php(37): view('users/inventory_barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 14:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 14:01:15 --> Undefined array key "alamat"
+in APPPATH\Views\users\inventory_barang.php on line 72.
+ 1 APPPATH\Views\users\inventory_barang.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alamat"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_barang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/inventory_barang', [], true)
+ 5 APPPATH\Controllers\Users\InventoryBarangController.php(37): view('users/inventory_barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryBarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 14:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 14:31:55 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\app\Controllers\Users\InventoryBarangController.php(51): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(915): App\Controllers\Users\InventoryBarangController->post()
+#10 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryBarangController))
+#11 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\samid\Documents\program\codeigniter\4\ci4_penjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\...')
+#14 {main}
+CRITICAL - 2024-01-28 14:31:55 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama`, `deskripsi`, `kode`, `created_at`, `updated_at`) VALUES (:nama:, :deskripsi:, :kode:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users\InventoryBarangController.php(51): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryBarangController->post()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryBarangController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 14:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 14:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 21:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 21:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 21:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 21:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 22:19:23 --> Undefined array key "kode"
+in APPPATH\Views\users\inventory_transaksi.php on line 57.
+ 1 APPPATH\Views\users\inventory_transaksi.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_transaksi.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_transaksi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/inventory_transaksi', [], true)
+ 5 APPPATH\Controllers\Users\InventoryTransaksiController.php(53): view('users/inventory_transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryTransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryTransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 22:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 22:46:57 --> Undefined array key "kode"
+in APPPATH\Views\users\inventory_transaksi_print.php on line 34.
+ 1 APPPATH\Views\users\inventory_transaksi_print.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode"', 'C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_transaksi_print.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\inventory_transaksi_print.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/inventory_transaksi_print', [], true)
+ 5 APPPATH\Controllers\Users\InventoryTransaksiController.php(79): view('users/inventory_transaksi_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\InventoryTransaksiController->print()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\InventoryTransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+INFO - 2024-01-28 22:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 22:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 23:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 23:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 23:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

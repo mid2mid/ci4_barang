@@ -1,0 +1,33 @@
+CRITICAL - 2024-01-26 10:15:48 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH\Views\users\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/home', [], true)
+ 4 APPPATH\Controllers\Users\HomeController.php(14): view('users/home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-26 10:15:56 --> Invalid file: "components/master.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/master.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('components/master', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/home', [], true)
+ 4 APPPATH\Controllers\Users\HomeController.php(14): view('users/home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-26 10:16:11 --> Invalid file: "user/components/master.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/components/master.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('user/components/master', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/home', [], true)
+ 4 APPPATH\Controllers\Users\HomeController.php(14): view('users/home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\HomeController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')

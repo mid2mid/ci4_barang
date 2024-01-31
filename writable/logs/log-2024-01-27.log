@@ -1,0 +1,43 @@
+CRITICAL - 2024-01-27 22:13:49 --> Invalid file: "users/data_customer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/data_customer.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+ 3 APPPATH\Controllers\Users\DataController.php(14): view('users/data_customer', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-27 22:20:54 --> The route for "admin.guru.tambah" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 487.
+ 1 SYSTEMPATH\Helpers\url_helper.php(487): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('admin.guru.tambah')
+ 2 APPPATH\Views\users\data_customer.php(12): url_to('admin.guru.tambah')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\app\\Views\\users\\data_customer.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+ 6 APPPATH\Controllers\Users\DataController.php(15): view('users/data_customer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-27 22:21:19 --> syntax error, unexpected token ";"
+in APPPATH\Views\users\data_customer.php on line 12.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+ 3 APPPATH\Controllers\Users\DataController.php(15): view('users/data_customer', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
+CRITICAL - 2024-01-27 22:21:34 --> syntax error, unexpected token ";"
+in APPPATH\Views\users\data_customer.php on line 12.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/data_customer', [], true)
+ 3 APPPATH\Controllers\Users\DataController.php(15): view('users/data_customer', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Users\DataController->customer()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\DataController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\samid\\Documents\\program\\codeigniter\\4\\ci4_penjualan\\public\\index.php')
